@@ -12,17 +12,14 @@ export const App = () => {
     <>
       <Section title="PhoneBook">
         <ContactForm />
-
+        <Filter />
+        <ContactList />
         {!users.length ? (
           <h3>Your phonebook is empty. Add your first contact</h3>
         ) : (
             <h3>Your phonebook has {users.length} contacts</h3>)
         }
-        <Filter />
-        <ContactList />
       </Section>
     </>
   );
 };
-
-
